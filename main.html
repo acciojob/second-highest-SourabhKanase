@@ -12,7 +12,16 @@
 			let n=arr.length;
 			let secondlargest=-Infinity;
 			let largest=-Infinity;
-			for(let i=0;i<n;i++)
+			let first=arr[0];
+			if(let i=0;i<n;i++)
+			{
+				if(first!=arr[i])
+				{
+					break;
+				}
+			}else
+			{
+				for(let i=0;i<n;i++)
 				{
 					if(arr[i]>largest)
 					{
@@ -24,19 +33,19 @@
 					}
 				}
 			return secondlargest;
-
-
-		}
-
-		function Main() {
-			var n = prompt("Enter the number of elements");
-			var arr = [];
-			for (var i = 0; i < n; i++) {
-				arr[i] = parseInt(prompt("Enter element " + (i+1)));
 			}
-			alert(secondHighest(arr));
-		}
-		Main();
+			
+ 		}
+
+		// function Main() {
+		// 	var n = prompt("Enter the number of elements");
+		// 	var arr = [];
+		// 	for (var i = 0; i < n; i++) {
+		// 		arr[i] = parseInt(prompt("Enter element " + (i+1)));
+		// 	}
+		// 	alert(secondHighest(arr));
+		// }
+		// Main();
 	</script>
 
     <script type="text/javascript" src="./script.js">
